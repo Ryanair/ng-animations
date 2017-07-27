@@ -3,7 +3,7 @@
 </header>
 
 <section>
-  <button (click)="highlightButton()" [@highlight]="isActive ? 'active' : 'inactive'">Click to load Heroes</button>
+  <button (click)="highlightButton()" [@highlight]="buttonState">Click to load Heroes</button>
 </section>
 
 <hero-list [heroes]="heroes"></hero-list>

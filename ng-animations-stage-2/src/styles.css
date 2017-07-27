@@ -1,0 +1,12 @@
+* {
+  outline: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}

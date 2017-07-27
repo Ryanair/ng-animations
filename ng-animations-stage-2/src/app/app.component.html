@@ -1,0 +1,11 @@
+<header>
+  <h1>Welcome to {{title}}!</h1>
+</header>
+
+<section>
+  <button (click)="highlightButton();toggleHeroes()" [@highlight]="buttonState">
+    Click to {{isLoaded ? 'unload' : 'load'}} Heroes
+  </button>
+</section>
+
+<hero-list *ngIf="isLoaded" [heroes]="heroes" [@slideFade]=""></hero-list>

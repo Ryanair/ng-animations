@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+
+hero + hero {
+  display: block;
+  margin-top: 1rem;
+}
