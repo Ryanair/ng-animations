@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 60px;
+  justify-content: center;
+}
+
+button {
+  background: #9a9b92;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
