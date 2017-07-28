@@ -13,29 +13,13 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
         transform: 'scale(1.1) rotate(-3deg)'
       })),
       transition('* <=> active', animate(200))
-    ]),
-    trigger('slideFade', [
-      state('void', style({
-        opacity: 0,
-        transform: 'translateX(-100%)'
-      })),
-      transition(':enter', animate('0.4s ease', style({ opacity: 1, transform: 'translateX(0)' }))),
-      transition(':leave', animate(200, style({ opacity: 0 })))
     ])
   ]
 })
 export class AppComponent {
   public title: string = 'Angular Animations';
 
-  public heroes: Hero[] = [
-    {name: 'Ant-Man', power: 'technology'},
-    {name: 'Black Widow', power: 'gun'},
-    {name: 'Doctor Strange', power: 'magic'},
-    {name: 'Hawkeye', power: 'bow'},
-    {name: 'Hulk', power: 'strength'},
-    {name: 'Iron Man', power: 'technology'},
-    {name: 'Spider-Man', power: 'agility'}
-  ];
+  public heroes: Hero[] = [];
 
   /* Button-related code */
   public isActive: boolean = false;
@@ -52,6 +36,15 @@ export class AppComponent {
   public isLoaded: boolean = false;
 
   public toggleHeroes(): void {
-    this.isLoaded = !this.isLoaded;
+    // this.isLoaded = !this.isLoaded;
+    this.heroes = this.heroes.length > 0 ? [] : [
+      {name: 'Ant-Man', power: 'technology'},
+      {name: 'Black Widow', power: 'gun'},
+      {name: 'Doctor Strange', power: 'magic'},
+      {name: 'Hawkeye', power: 'bow'},
+      {name: 'Hulk', power: 'strength'},
+      {name: 'Iron Man', power: 'technology'},
+      {name: 'Spider-Man', power: 'agility'}
+    ];
   }
 }
