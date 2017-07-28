@@ -19,8 +19,8 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
         opacity: 0,
         transform: 'translateX(-100%)'
       })),
-      transition('void => *', animate('0.4s ease-in')),
-      transition('* => void', animate('0.2s ease-out'))
+      transition(':enter', animate('0.4s ease')),
+      transition(':leave', animate(100))
     ])
   ]
 })
