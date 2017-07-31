@@ -33,10 +33,7 @@ export class AppComponent {
   }
 
   /* HeroList-related code */
-  public isLoaded: boolean = false;
-
   public toggleHeroes(): void {
-    // this.isLoaded = !this.isLoaded;
     this.heroes = this.heroes.length > 0 ? [] : [
       {name: 'Ant-Man', power: 'technology'},
       {name: 'Black Widow', power: 'gun'},
