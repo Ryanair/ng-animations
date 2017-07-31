@@ -1,0 +1,18 @@
+button {
+  background: #dd0330;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+section {
+  padding: 0.25rem 1rem;
+}

@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+hero + hero {
+  display: block;
+  margin-top: 1rem;
+}

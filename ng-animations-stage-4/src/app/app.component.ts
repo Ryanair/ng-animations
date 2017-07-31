@@ -1,19 +1,13 @@
 import { Component } from '@angular/core';
 import { Hero } from '../hero-list/hero/hero.component';
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { highlightAnimations } from './app.animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
-    trigger('highlight', [
-      state('active', style({
-        backgroundColor: '#000',
-        transform: 'scale(1.1) rotate(-3deg)'
-      })),
-      transition('* <=> active', animate(200))
-    ])
+    highlightAnimations
   ]
 })
 export class AppComponent {
