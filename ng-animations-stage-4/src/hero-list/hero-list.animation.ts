@@ -1,6 +1,6 @@
-import { animate, query, transition, trigger, style, stagger, keyframes, group, state } from '@angular/animations';
+import { animate, query, transition, trigger, style, stagger, keyframes } from '@angular/animations';
 
-export const slideStaggerAnimations = trigger('slideStagger', [
+export const slideStaggerAnimation = trigger('slideStagger', [
   transition('* => *', [
     query(':enter', style({ opacity: 0 }), { optional: true }),
     query(':enter', stagger('200ms', [
@@ -11,15 +11,7 @@ export const slideStaggerAnimations = trigger('slideStagger', [
       ])),
     ]), { optional: true }),
     query(':leave', stagger('100ms', [
-      animate('200ms ease-out', style({ opacity: 0 })),
+      animate('200ms ease-out', style({ opacity: 0 }))
     ]), { optional: true })
   ])
 ]);
-
-
-/**
- group([
- animate('200ms linear', style({ transform: 'rotate(180deg)' })),
- animate('600ms ease-in', style({ transform: 'scale(0,0)' }))
- ])
- */

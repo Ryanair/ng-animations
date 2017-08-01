@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { Hero } from '../hero-list/hero/hero.component';
-import { highlightAnimations } from './app.animations';
+import { highlightAnimation } from './app.animation';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [
-    highlightAnimations
-  ]
+  animations: [highlightAnimation]
 })
 export class AppComponent {
   public title: string = 'Angular Animations';
